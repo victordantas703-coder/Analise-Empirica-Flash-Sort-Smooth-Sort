@@ -84,6 +84,9 @@ Ao final do experimento, será mostrado o tempo de execução médio dos algorí
 ## Integrantes
 
 Gabriel Pinheiro Maia
+
 Pedro Fidalgo
+
 Victor Matheus de Abreu Dantas
+
 Vitor Cavalcante Borges 
