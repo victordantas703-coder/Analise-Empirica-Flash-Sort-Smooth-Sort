@@ -20,7 +20,7 @@ constexpr uint64_t BASE_SEED = 0xC0FFEE123456789ULL;
 // Metricas da simulação (tempo de execução)
 struct Metrics {
     std::chrono::duration<double, std::micro> FlashSortTime;
-    std::chrono::duration<double, std::micro> ShoothSortTime;
+    std::chrono::duration<double, std::micro> SmoothSortTime;
 };
 
 // Struct para armazenar as variáveis usadas nas simulações
@@ -70,12 +70,12 @@ Metrics runSingleSimulation(int n, uint64_t seed) {
 
     // Calcula o tempo de execução que cada algorítimo levou para executar a simulação
     std::chrono::duration<double, std::micro> FlashSortTime = endTimeFlashSort - startTimeFlashSort; 
-    std::chrono::duration<double, std::micro> ShoothSortTime = endTimeSmoothSort - startTimeSmoothSort;
+    std::chrono::duration<double, std::micro> SmoothSortTime = endTimeSmoothSort - startTimeSmoothSort;
 
     // retorna esses tempos de execução em microsegundos
     return {
         std::chrono::duration<double, std::micro>(FlashSortTime),
-        std::chrono::duration<double, std::micro>(ShoothSortTime)
+        std::chrono::duration<double, std::micro>(SmoothSortTime)
     };
 }
 
@@ -98,12 +98,12 @@ ScenarioResult runScenario(int exponent){
 
         // Acumula o os tempos de execução de todas as simulações
         total.FlashSortTime += current.FlashSortTime;
-        total.ShoothSortTime += current.ShoothSortTime;
+        total.SmoothSortTime += current.SmoothSortTime;
     }
     
     // Os tempos de execução são divididos pela quantidade de simulações feitas
     total.FlashSortTime = total.FlashSortTime / SIMULATIONS_QUANTITY;
-    total.ShoothSortTime = total.ShoothSortTime / SIMULATIONS_QUANTITY;
+    total.SmoothSortTime = total.SmoothSortTime / SIMULATIONS_QUANTITY;
 
     std::cout << "Finished n=2^" << exponent << '\n';
 
@@ -128,7 +128,7 @@ void printSmoothSortTimeTable(const std::vector<ScenarioResult>& results) {
 
     for (const ScenarioResult& result : results) {
         std::cout << "2^" << result.exponent << '\t'
-                  << result.metrics.ShoothSortTime.count() << " us" << '\n';
+                  << result.metrics.SmoothSortTime.count() << " us" << '\n';
     }
 }
 
