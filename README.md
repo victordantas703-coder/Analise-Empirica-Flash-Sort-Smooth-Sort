@@ -9,7 +9,7 @@
 - [Introdução](#introdução)
 - [Compilação](#compilação)
 - [Uso do Programa de Análise Empírica](#uso-do-programa-de-análise-empírica)
-- [Referência dos Algorítimos](#referência-dos-algorítimos)
+- [Referência dos Algorítmos](#referência-dos-algorítmos)
 - [Integrantes](#integrantes)
 
 ## Introdução
@@ -80,7 +80,7 @@ Será executado 320 simulações dos algorítmos Flash Sort e Smooth Sort.
 
 Ao final do experimento, será mostrado o tempo de execução médio dos algorítmos na ordenação de vetores aleatórios de tamanho $n \in \{2^{12}, 2^{13}, 2^{14},..., 2^{19}, 2^{20}\}$.
 
-## Referência dos Algorítimos
+## Referência dos Algorítmos
 
 [[1]](https://www.neubert.net/FSOIntro.html) Neubert, K.-D. The FlashSort Algorithm. Dr. Dobb's Journal, v. 23, n. 2, 1998.
 
