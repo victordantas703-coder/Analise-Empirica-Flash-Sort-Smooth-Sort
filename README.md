@@ -9,11 +9,12 @@
 - [Introdução](#introdução)
 - [Compilação](#compilação)
 - [Uso do Programa de Análise Empírica](#uso-do-programa-de-análise-empírica)
+- [Referência dos Algorítimos](#referência-dos-algorítimos)
 - [Integrantes](#integrantes)
 
 ## Introdução
 
-Trabalho de análise empírica dos algorítmos Flash Sort e Smooth Sort referente à disciplina de Estrutura de Dados Básicas II do curso de BTI/UFRN.
+Trabalho de análise empírica dos algorítmos Flash Sort [[1]](https://www.neubert.net/FSOIntro.html) e Smooth Sort [[2]](https://www.cs.utexas.edu/~EWD/ewd07xx/EWD796a.PDF) referente à disciplina de Estrutura de Dados Básicas II do curso de BTI/UFRN.
 
 ## Compilação
 
@@ -29,14 +30,12 @@ __2.__  Execute
 
 Windows
 
-
 ```shell
 cd .\Analise-Empirica-Flash-Sort-Smooth-Sort\
 g++ .\src\main.cpp .\src\keyGenerator.cpp -o analise_empirica
 ```
 
 Linux / macOS
-
 
 ```shell
 cd /Analise-Empirica-Flash-Sort-Smooth-Sort
@@ -81,6 +80,12 @@ Será executado 320 simulações dos algorítmos Flash Sort e Smooth Sort.
 
 Ao final do experimento, será mostrado o tempo de execução médio dos algorítmos na ordenação de vetores aleatórios de tamanho $n \in \{2^{12}, 2^{13}, 2^{14},..., 2^{19}, 2^{20}\}$.
 
+## Referência dos Algorítimos
+
+[[1]](https://www.neubert.net/FSOIntro.html) Neubert, K.-D. The FlashSort Algorithm. Dr. Dobb's Journal, v. 23, n. 2, 1998.
+
+[[2]](https://www.cs.utexas.edu/~EWD/ewd07xx/EWD796a.PDF) Dijkstra, E. W. Smoothsort, an alternative for sorting in situ. E.W. Dijkstra Archive, EWD796a, 1981.
+
 ## Integrantes
 
 Gabriel Pinheiro Maia
@@ -89,4 +94,4 @@ Pedro Fidalgo
 
 Victor Matheus de Abreu Dantas
 
-Vitor Cavalcante Borges 
+Vitor Cavalcante Borges
